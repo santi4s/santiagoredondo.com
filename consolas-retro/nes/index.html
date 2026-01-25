@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES - Nintendo Entertainment System | Consolas Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #ecf0f1;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #ecf0f1;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 2rem;
+            border: 2px solid #ecf0f1;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #ecf0f1;
+            color: #e74c3c;
+            transform: translateX(-5px);
+        }
+
+        .hero-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 3px solid #ecf0f1;
+            text-align: center;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #ecf0f1;
+        }
+
+        h2 {
+            color: #ecf0f1;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #e74c3c;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #ecf0f1;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #ecf0f1;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .legacy-box {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.3), rgba(192, 57, 43, 0.3));
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px solid #ecf0f1;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 5px solid #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 NES 🎮</h1>
+        <p class="subtitle">Nintendo Entertainment System - La consola que lo cambió todo</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Consolas Retro</a>
+
+        <div class="hero-section">
+            <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 3rem; border-radius: 10px; margin: 1rem 0;">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">🎮</p>
+                    <p style="font-size: 1.5rem; font-weight: bold;">NINTENDO ENTERTAINMENT SYSTEM</p>
+                    <p style="margin-top: 0.5rem; opacity: 0.8;">La consola gris que salvó la industria</p>
+                </div>
+            </div>
+            <p class="intro-text">
+                La NES fue la consola que resucitó la industria del videojuego tras el gran crash de 1983. Nintendo no solo creó una máquina para jugar, sino que estableció las bases de cómo entendemos los videojuegos hoy en día. Para toda una generación, aquellos cartuchos grises fueron la puerta a mundos extraordinarios.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📅 Contexto Histórico</h2>
+            <ul>
+                <li><span class="highlight">Lanzamiento en Japón (Famicom):</span> 1983</li>
+                <li><span class="highlight">Lanzamiento en Estados Unidos:</span> 1985</li>
+                <li><span class="highlight">Lanzamiento en Europa:</span> 1986</li>
+                <li><span class="highlight">Situación del mercado:</span> La industria del videojuego había colapsado en 1983. Atari agonizaba entre títulos mediocres y nadie confiaba en las consolas domésticas</li>
+                <li><span class="highlight">Estrategia de Nintendo:</span> Control de calidad estricto y un catálogo cuidadosamente seleccionado. Cada juego debía pasar un riguroso proceso de aprobación</li>
+                <li><span class="highlight">Competencia inicial:</span> Prácticamente ninguna. Nintendo llegó a un mercado vacío y lo conquistó con inteligencia</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Características Clave</h2>
+            <ul>
+                <li><span class="highlight">Tipo:</span> Consola de sobremesa</li>
+                <li><span class="highlight">Formato:</span> Cartuchos insertables en la ranura superior</li>
+                <li><span class="highlight">Tecnología:</span> 8 bits con gráficos coloridos y vibrantes</li>
+                <li><span class="highlight">Mando:</span> Diseño rectangular con cruceta (D-pad) y dos botones rojos (A y B) que se convirtió en el estándar</li>
+                <li><span class="highlight">Sonido:</span> Chip capaz de generar melodías memorables que todavía tarareamos hoy</li>
+                <li><span class="highlight">El ritual del cartucho:</span> Todos recordamos soplarlos cuando fallaban, aunque técnicamente no servía de nada... ¡pero funcionaba!</li>
+                <li><span class="highlight">Diseño:</span> Carcasa gris y rectangular que se convirtió en icónica. El Zapper (pistola de luz) era el complemento perfecto para Duck Hunt</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Juegos Emblemáticos</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>🍄 Super Mario Bros.</h3>
+                    <p>El fontanero que definió los juegos de plataformas para siempre</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚔️ The Legend of Zelda</h3>
+                    <p>Aventura épica que creó un género y millones de fans</p>
+                </div>
+                <div class="game-card">
+                    <h3>👾 Metroid</h3>
+                    <p>Exploración atmosférica con una heroína revolucionaria</p>
+                </div>
+                <div class="game-card">
+                    <h3>🤖 Mega Man</h3>
+                    <p>Acción frenética y desafío extremo</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦇 Castlevania</h3>
+                    <p>Terror gótico y látigos contra Drácula</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦆 Duck Hunt</h3>
+                    <p>Cazar patos con el Zapper era adictivo (y ese perro...)</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem;">
+                Estos juegos no solo entretenían: <span class="highlight">contaban historias, desafiaban tu habilidad y te hacían volver una y otra vez.</span> Super Mario Bros. vendió más de 40 millones de copias y se convirtió en sinónimo de videojuego.
+            </p>
+        </div>
+
+        <div class="legacy-box">
+            <h2>🏆 Legado y Memoria</h2>
+            <ul>
+                <li><span class="highlight">Salvó la industria:</span> Tras el crash de 1983, Nintendo demostró que los videojuegos podían ser un negocio serio y rentable</li>
+                <li><span class="highlight">Definió géneros:</span> Plataformas, aventuras, RPGs... muchos géneros nacieron o se perfeccionaron en la NES</li>
+                <li><span class="highlight">Creó iconos culturales:</span> Mario es más reconocible que Mickey Mouse. Link, Samus, Mega Man... personajes que trascienden el medio</li>
+                <li><span class="highlight">El sello de calidad Nintendo:</span> Ese pequeño logo dorado garantizaba diversión. Era un compromiso con el jugador</li>
+                <li><span class="highlight">Ventas totales:</span> Más de 61 millones de unidades en todo el mundo</li>
+                <li><span class="highlight">Memoria generacional:</span> Para los nacidos en los 80, la NES define la infancia. Las tardes infinitas, los amigos en casa, los gritos de emoción al superar un nivel imposible</li>
+                <li><span class="highlight">Influencia actual:</span> El diseño de mandos, la estructura de juegos, el concepto de saga... todo viene de aquí</li>
+            </ul>
+            <p style="margin-top: 2rem; font-size: 1.1rem; font-style: italic;">
+                "La NES no fue solo una consola. Fue la prueba de que los videojuegos podían ser arte, negocio y memoria colectiva al mismo tiempo. Cuarenta años después, seguimos recordando aquellos píxeles grises como si fueran ayer."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
+        <p style="margin-top: 0.5rem;">Los píxeles del ayer, la nostalgia de hoy</p>
+    </footer>
+</body>
+</html>
