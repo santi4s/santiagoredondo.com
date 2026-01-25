@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy Color | Consolas Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #f39c12;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #e67e22;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #f39c12;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 2rem;
+            border: 2px solid #f39c12;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #f39c12;
+            color: #000;
+            transform: translateX(-5px);
+        }
+
+        .hero-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 3px solid #f39c12;
+            text-align: center;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #f39c12;
+        }
+
+        h2 {
+            color: #f39c12;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #e67e22;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .game-card {
+            background: rgba(230, 126, 34, 0.3);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(243, 156, 18, 0.3);
+            transition: all 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #f39c12;
+            background: rgba(230, 126, 34, 0.5);
+        }
+
+        .color-box {
+            background: linear-gradient(135deg, rgba(230, 126, 34, 0.4), rgba(211, 84, 0, 0.4));
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid #f39c12;
+            margin: 1.5rem 0;
+        }
+
+        .legacy-box {
+            background: linear-gradient(135deg, rgba(230, 126, 34, 0.3), rgba(211, 84, 0, 0.3));
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px solid #f39c12;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 5px solid #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌈 GAME BOY COLOR 🌈</h1>
+        <p class="subtitle">El color que todos esperábamos</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Consolas Retro</a>
+
+        <div class="hero-section">
+            <div style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); padding: 3rem; border-radius: 10px; margin: 1rem 0;">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">🌈</p>
+                    <p style="font-size: 1.5rem; font-weight: bold;">GAME BOY COLOR</p>
+                    <p style="margin-top: 0.5rem; opacity: 0.8;">Cartuchos transparentes y colores vibrantes</p>
+                </div>
+            </div>
+            <p class="intro-text">
+                La Game Boy Color fue la evolución natural que todos pedíamos: la misma experiencia portátil pero finalmente a todo color. Nintendo escuchó y entregó justo lo necesario sin romper la esencia. Aquellos cartuchos transparentes de colores brillantes siguen siendo pequeñas joyas del diseño.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📅 Contexto Histórico</h2>
+            <ul>
+                <li><span class="highlight">Lanzamiento:</span> 1998, casi una década después de la Game Boy original</li>
+                <li><span class="highlight">Situación del mercado:</span> PlayStation y Nintendo 64 dominaban el mercado doméstico en la era de 32 y 64 bits</li>
+                <li><span class="highlight">Estrategia:</span> Extender la vida de la familia Game Boy sin competir con las grandes de sobremesa</li>
+                <li><span class="highlight">Competencia portátil:</span> Neo Geo Pocket Color, WonderSwan... ninguna logró desbancar a Nintendo</li>
+                <li><span class="highlight">Momento perfecto:</span> Llegó cuando Pokémon ya era fenómeno mundial, potenciando aún más las ventas</li>
+            </ul>
+
+            <div class="color-box">
+                <h3 style="color: #f39c12; margin-bottom: 1rem;">🎨 ¡Por fin a color!</h3>
+                <p>Tras años de pantalla verde, ver Super Mario en colores brillantes era mágico. Link's Awakening DX mostraba Koholint Island como nunca antes. Pokémon Gold y Silver aprovechaban el color con su ciclo día/noche. El salto visual era impresionante para quien venía del monocromo.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Características Clave</h2>
+            <ul>
+                <li><span class="highlight">Tipo:</span> Consola portátil a color</li>
+                <li><span class="highlight">Pantalla:</span> LCD TFT a color de 2.32 pulgadas</li>
+                <li><span class="highlight">Paleta de colores:</span> 32.768 colores posibles, aunque limitados por pantalla a 56 simultáneos</li>
+                <li><span class="highlight">Compatibilidad total:</span> Jugaba todos los juegos de Game Boy original (en B&N o con paletas de color)</li>
+                <li><span class="highlight">Cartuchos identificables:</span> Los grises eran compatibles, los transparentes de colores eran exclusivos GBC</li>
+                <li><span class="highlight">Procesador mejorado:</span> Doble velocidad respecto a Game Boy original</li>
+                <li><span class="highlight">Autonomía:</span> Algo menor que la original (10-15 horas) pero todavía excelente con 2 pilas AA</li>
+                <li><span class="highlight">Diseño compacto:</span> Más pequeña y ligera, disponible en múltiples colores vibrantes</li>
+                <li><span class="highlight">Puerto infrarrojo:</span> Para comunicación inalámbrica entre consolas (poco usado pero innovador)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Juegos Emblemáticos</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>⚔️ Zelda: Oracle of Ages</h3>
+                    <p>Viajes en el tiempo con puzzles brillantes</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚔️ Zelda: Oracle of Seasons</h3>
+                    <p>Control de las estaciones y acción trepidante</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚡ Pokémon Gold/Silver</h3>
+                    <p>100 nuevos Pokémon, ciclo día/noche, dos regiones. La perfección</p>
+                </div>
+                <div class="game-card">
+                    <h3>💎 Pokémon Crystal</h3>
+                    <p>Versión mejorada con animaciones de batalla y más contenido</p>
+                </div>
+                <div class="game-card">
+                    <h3>🍄 Super Mario Bros. Deluxe</h3>
+                    <p>El clásico de NES renacido a todo color en portátil</p>
+                </div>
+                <div class="game-card">
+                    <h3>💰 Wario Land 3</h3>
+                    <p>Exploración no-lineal y transformaciones absurdas</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦖 Donkey Kong Country</h3>
+                    <p>Impresionante conversión portátil del clásico SNES</p>
+                </div>
+                <div class="game-card">
+                    <h3>🎴 Yu-Gi-Oh!</h3>
+                    <p>Duelos de cartas que aprovechaban el color perfectamente</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem;">
+                <span class="highlight">Pokémon Gold/Silver/Crystal explotaron las posibilidades del color</span> con su innovador sistema día/noche, Pokémon exclusivos de cada momento y una presentación visual muy superior. Ver a Ho-Oh y Lugia en color era espectacular.
+            </p>
+        </div>
+
+        <div class="legacy-box">
+            <h2>🏆 Legado del Color</h2>
+            <ul>
+                <li><span class="highlight">El puente perfecto:</span> Conectó la Game Boy original con la Game Boy Advance sin romper la continuidad</li>
+                <li><span class="highlight">Compatibilidad inteligente:</span> Mantener toda la biblioteca anterior fue una decisión brillante</li>
+                <li><span class="highlight">Ventas sólidas:</span> Más de 118 millones de unidades (sumada a la familia Game Boy)</li>
+                <li><span class="highlight">Extensión de vida:</span> Mantuvo la plataforma Game Boy relevante hasta 2001</li>
+                <li><span class="highlight">Segunda generación Pokémon:</span> Gold/Silver aprovecharon el color para crear experiencias más ricas</li>
+                <li><span class="highlight">Remasters perfectos:</span> Juegos como Link's Awakening DX demostraron cómo mejorar clásicos con color</li>
+                <li><span class="highlight">Diseño colorido:</span> Las carcasas transparentes en múltiples colores eran preciosas</li>
+                <li><span class="highlight">No revolucionó, refinó:</span> Y a veces eso es exactamente lo que se necesita</li>
+            </ul>
+            <p style="margin-top: 2rem; font-size: 1.1rem; font-style: italic;">
+                "La Game Boy Color no reinventó la rueda, pero la pintó con colores vibrantes. Fue la evolución lógica, respetuosa con el legado pero mirando al futuro. Para quienes crecimos con la pantalla verde, ver ese mismo mundo en color fue como volver a casa pero encontrándola renovada."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
+        <p style="margin-top: 0.5rem;">Del verde al arcoíris portátil</p>
+    </footer>
+</body>
+</html>
