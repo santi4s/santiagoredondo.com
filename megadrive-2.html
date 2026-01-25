@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Drive II | Consolas Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #0f3460;
+            box-shadow: 0 5px 25px rgba(15, 52, 96, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #0f3460, 6px 6px 0 #533483;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #e94560;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 2rem;
+            border: 2px solid #e94560;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #e94560;
+            color: #000;
+            transform: translateX(-5px);
+        }
+
+        .hero-section {
+            background: rgba(15, 52, 96, 0.3);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 3px solid #e94560;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(233, 69, 96, 0.2);
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.3);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #e94560;
+        }
+
+        h2 {
+            color: #e94560;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #0f3460;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #e94560;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: #e94560;
+            font-weight: bold;
+        }
+
+        .design-box {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.3), rgba(15, 52, 96, 0.3));
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid #e94560;
+            margin: 1.5rem 0;
+        }
+
+        .legacy-box {
+            background: linear-gradient(135deg, rgba(15, 52, 96, 0.5), rgba(22, 33, 62, 0.5));
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px solid #e94560;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 5px solid #e94560;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚡ MEGA DRIVE II ⚡</h1>
+        <p class="subtitle">Diseño renovado, misma revolución</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Consolas Retro</a>
+
+        <div class="hero-section">
+            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 3rem; border-radius: 10px; margin: 1rem 0; border: 2px solid #e94560;">
+                <div style="background: rgba(233, 69, 96, 0.2); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">⚡</p>
+                    <p style="font-size: 1.5rem; font-weight: bold;">SEGA MEGA DRIVE II</p>
+                    <p style="margin-top: 0.5rem; opacity: 0.8;">Versión compacta y redondeada</p>
+                </div>
+            </div>
+            <p class="intro-text">
+                La Mega Drive II fue la revisión estilizada de la exitosa consola de SEGA, un rediseño que buscaba reducir costes y modernizar la estética sin tocar la fórmula ganadora. Menos icónica visualmente que el modelo original, cumplió perfectamente su cometido: mantener la competitividad mientras la compañía transitaba generaciones.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📅 Contexto Histórico</h2>
+            <ul>
+                <li><span class="highlight">Lanzamiento:</span> 1993</li>
+                <li><span class="highlight">Momento del mercado:</span> Mega Drive original ya había conquistado millones de hogares</li>
+                <li><span class="highlight">Nueva generación asomando:</span> PlayStation, Saturn y Nintendo 64 se preparaban para los 32/64 bits</li>
+                <li><span class="highlight">Estrategia SEGA:</span> Modelo más económico para ampliar base de usuarios mientras preparaban Saturn</li>
+                <li><span class="highlight">Competencia:</span> Super Nintendo en plena madurez, guerra de 16 bits en su apogeo</li>
+                <li><span class="highlight">Objetivo:</span> Mantener momentum y ventas mientras se transicionaba a la siguiente generación</li>
+            </ul>
+
+            <div class="design-box">
+                <h3 style="color: #e94560; margin-bottom: 1rem;">🎨 El Nuevo Diseño</h3>
+                <p>Notablemente más compacto y redondeado que la agresiva Mega Drive original. Las líneas suaves y la estética más "amigable" recordaban al diseño de Super Nintendo. Algunos fans puristas lo consideraron menos icónico, pero el nuevo diseño era más económico de producir y se adaptaba mejor a diferentes entornos domésticos.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Características Clave</h2>
+            <ul>
+                <li><span class="highlight">Tipo:</span> Consola de sobremesa de 16 bits (revisión)</li>
+                <li><span class="highlight">Diseño compacto:</span> Significativamente más pequeño y ligero que el modelo original</li>
+                <li><span class="highlight">Estética redondeada:</span> Líneas suaves vs. el diseño angular y agresivo de Mega Drive I</li>
+                <li><span class="highlight">Compatibilidad total:</span> Todos los cartuchos de Mega Drive funcionaban perfectamente</li>
+                <li><span class="highlight">Periféricos:</span> Compatible con Mega CD (mediante adaptador en algunos modelos)</li>
+                <li><span class="highlight">Técnicamente idéntica:</span> Mismo procesador Motorola 68000, mismos 16 bits, misma potencia</li>
+                <li><span class="highlight">Mismo sonido FM:</span> El característico chip Yamaha YM2612 intacto</li>
+                <li><span class="highlight">Reducción de costes:</span> Componentes optimizados para fabricación más económica</li>
+                <li><span class="highlight">Puerto de auriculares:</span> Eliminado en esta versión (reducción de costes)</li>
+                <li><span class="highlight">Chasis más eficiente:</span> Menos plástico, diseño más económico pero igual de funcional</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Biblioteca de Juegos</h2>
+            <p style="margin-bottom: 1.5rem;">
+                La Mega Drive II compartía la <span class="highlight">biblioteca completa de la original.</span> No había juegos exclusivos, pero eso significaba acceso instantáneo a una de las mejores colecciones de la historia:
+            </p>
+            <ul>
+                <li><span class="highlight">🦔 Saga Sonic completa:</span> Desde el primer Sonic hasta Sonic & Knuckles</li>
+                <li><span class="highlight">👊 Streets of Rage 1, 2 y 3:</span> La trilogía beat'em up definitiva</li>
+                <li><span class="highlight">⚔️ Golden Axe:</span> Fantasía bárbara en todo su esplendor</li>
+                <li><span class="highlight">✨ Phantasy Star IV:</span> RPG de ciencia ficción de primer nivel</li>
+                <li><span class="highlight">🥷 Shinobi III:</span> Acción ninja perfeccionada</li>
+                <li><span class="highlight">🔫 Gunstar Heroes:</span> Run & gun frenético de Treasure</li>
+                <li><span class="highlight">⚽ Deportivos EA:</span> FIFA, NBA Jam, Madden... la era dorada de deportivos</li>
+                <li><span class="highlight">🥊 Juegos de lucha:</span> Mortal Kombat, Street Fighter II, Eternal Champions</li>
+                <li><span class="highlight">🎮 Clásicos Disney:</span> Aladdin, The Lion King con animación espectacular</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">
+                Todo funcionaba <span class="highlight">exactamente igual</span> en este nuevo envoltorio más compacto y discreto.
+            </p>
+        </div>
+
+        <div class="legacy-box">
+            <h2>🏆 Legado de la Revisión</h2>
+            <ul>
+                <li><span class="highlight">Madurez comercial:</span> SEGA demostró saber optimizar y adaptar sin perder esencia</li>
+                <li><span class="highlight">Accesibilidad mejorada:</span> Precio más competitivo mantuvo la plataforma viva más tiempo</li>
+                <li><span class="highlight">Para nuevos usuarios:</span> Muchos jugadores llegaron tarde a los 16 bits gracias a este modelo</li>
+                <li><span class="highlight">Producción prolongada:</span> Se fabricó varios años, solapándose con Saturn</li>
+                <li><span class="highlight">Menos icónica, igual de capaz:</span> Sacrificó presencia visual por practicidad</li>
+                <li><span class="highlight">Puente generacional:</span> Mantuvo SEGA relevante mientras preparaban el salto a 32 bits</li>
+                <li><span class="highlight">Diseño controvertido:</span> Algunos preferían la agresividad del original, otros la discreción de este modelo</li>
+                <li><span class="highlight">Cumplió su misión:</span> Extender la vida comercial de la plataforma exitosamente</li>
+            </ul>
+            <p style="margin-top: 2rem; font-size: 1.1rem; font-style: italic;">
+                "La Mega Drive II no fue la consola más emocionante de SEGA, pero fue pragmática. Representó la madurez de una compañía que sabía cuándo innovar agresivamente y cuándo optimizar lo existente. Para quienes llegaron a los 16 bits en los 90, este modelo compacto fue su puerta de entrada al universo de la velocidad, los 16 bits y las tardes interminables frente al televisor. Y eso es lo que realmente importa."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
+        <p style="margin-top: 0.5rem;">Compacta pero poderosa ⚡</p>
+    </footer>
+</body>
+</html>

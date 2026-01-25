@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy - La Revolución Portátil | Consolas Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #27ae60 0%, #16a085 100%);
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #9acd32;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #27ae60;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #9acd32;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 2rem;
+            border: 2px solid #9acd32;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #9acd32;
+            color: #000;
+            transform: translateX(-5px);
+        }
+
+        .hero-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 3px solid #9acd32;
+            text-align: center;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #9acd32;
+        }
+
+        h2 {
+            color: #9acd32;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #27ae60;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #9acd32;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: #9acd32;
+            font-weight: bold;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .game-card {
+            background: rgba(39, 174, 96, 0.3);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(154, 205, 50, 0.3);
+            transition: all 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #9acd32;
+            background: rgba(39, 174, 96, 0.5);
+        }
+
+        .nostalgia-box {
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.4), rgba(22, 160, 133, 0.4));
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid #9acd32;
+            margin: 1.5rem 0;
+        }
+
+        .legacy-box {
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.3), rgba(22, 160, 133, 0.3));
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px solid #9acd32;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 5px solid #9acd32;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📱 GAME BOY 📱</h1>
+        <p class="subtitle">La magia portátil en tonos verdes</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Consolas Retro</a>
+
+        <div class="hero-section">
+            <div style="background: linear-gradient(135deg, #27ae60 0%, #16a085 100%); padding: 3rem; border-radius: 10px; margin: 1rem 0;">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">📱</p>
+                    <p style="font-size: 1.5rem; font-weight: bold;">NINTENDO GAME BOY</p>
+                    <p style="margin-top: 0.5rem; opacity: 0.8;">Pantalla verde, aventuras infinitas</p>
+                </div>
+            </div>
+            <p class="intro-text">
+                La Game Boy revolucionó el concepto mismo de videojuego al hacerlo verdaderamente portátil. Nintendo logró meter la magia de sus consolas en un aparato que cabía en tu mochila. Aquella pantalla verdosa fue compañera de viajes, recreos y noches bajo las sábanas con una linterna.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📅 Contexto Histórico</h2>
+            <ul>
+                <li><span class="highlight">Lanzamiento:</span> 1989 en Japón y Norteamérica</li>
+                <li><span class="highlight">Situación del mercado:</span> Las portátiles eran curiosidades caras y poco prácticas antes de Game Boy</li>
+                <li><span class="highlight">Competencia principal:</span> SEGA Game Gear (pantalla a color, mayor potencia, pero peor autonomía)</li>
+                <li><span class="highlight">Estrategia Nintendo:</span> Sacrificó color y potencia por autonomía y precio accesible</li>
+                <li><span class="highlight">La decisión ganadora:</span> 4 pilas AA daban hasta 30 horas de juego. La competencia apenas llegaba a 5 horas</li>
+                <li><span class="highlight">Filosofía:</span> "Diversión sobre especificaciones técnicas" - y funcionó perfectamente</li>
+            </ul>
+
+            <div class="nostalgia-box">
+                <h3 style="color: #9acd32; margin-bottom: 1rem;">💚 La Pantalla Verde Inolvidable</h3>
+                <p>Esos cuatro tonos de verde (del blanco verdoso al negro verdoso) definieron una época. Sin retroiluminación, buscabas la luz perfecta: junto a la ventana del coche, bajo la lámpara, en el recreo bajo el sol. Era parte de la experiencia, parte de la aventura.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Características Clave</h2>
+            <ul>
+                <li><span class="highlight">Tipo:</span> Consola portátil revolucionaria</li>
+                <li><span class="highlight">Pantalla:</span> LCD monocromática de 2.6 pulgadas en tonos verdes (4 tonalidades)</li>
+                <li><span class="highlight">Sin retroiluminación:</span> Necesitabas luz externa, lo que creó toda una cultura (linternas, luces de coche, accesorios con luz...)</li>
+                <li><span class="highlight">Diseño robusto:</span> Plástico gris resistente que aguantaba caídas, viajes y el uso intensivo de niños</li>
+                <li><span class="highlight">Leyenda urbana real:</span> Sobrevivió a la Guerra del Golfo. Hay una Game Boy quemada en un bombardeo que sigue funcionando (expuesta en Nintendo Store NY)</li>
+                <li><span class="highlight">Cartuchos diminutos:</span> Guardados en estuches, cabían en cualquier bolsillo</li>
+                <li><span class="highlight">Tecnología:</span> 8 bits, modesta pero efectiva</li>
+                <li><span class="highlight">Autonomía legendaria:</span> 15-30 horas con 4 pilas AA. Podías jugar semanas antes de cambiarlas</li>
+                <li><span class="highlight">Link Cable:</span> Cable de conexión para jugar con amigos e intercambiar Pokémon</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Juegos Emblemáticos</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>🧱 Tetris</h3>
+                    <p>Venía incluido y se convirtió en fenómeno mundial. Adicción pura en caída de bloques</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚡ Pokémon Red/Blue</h3>
+                    <p>Transformó la Game Boy en objeto de culto planetario. 151 criaturas que conquistaron el mundo</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚔️ Zelda: Link's Awakening</h3>
+                    <p>Aventura épica en portátil que demostró que portátil no significa menor calidad</p>
+                </div>
+                <div class="game-card">
+                    <h3>🍄 Super Mario Land</h3>
+                    <p>Mario llegaba a la portátil con mundos nuevos y música pegadiza</p>
+                </div>
+                <div class="game-card">
+                    <h3>🌸 Kirby's Dream Land</h3>
+                    <p>La bola rosa conquistaba corazones con su ternura y diversión</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦆 Wario Land</h3>
+                    <p>El anti-héroe de Nintendo brillaba con luz propia</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem;">
+                <span class="highlight">Pokémon especialmente transformó la Game Boy.</span> De ser un éxito sólido pasó a ser fenómeno cultural. Intercambiar Pokémon con el Link Cable en el recreo era el evento social de la semana.
+            </p>
+        </div>
+
+        <div class="legacy-box">
+            <h2>🏆 Legado Portátil</h2>
+            <ul>
+                <li><span class="highlight">Ventas estratosféricas:</span> Más de 118 millones de unidades (sumando todos sus modelos)</li>
+                <li><span class="highlight">Creó el videojuego móvil:</span> La cultura del gaming portátil nace aquí, mucho antes de los smartphones</li>
+                <li><span class="highlight">Demostró una filosofía:</span> La diversión supera las especificaciones técnicas. Ganó a competidores más potentes</li>
+                <li><span class="highlight">Resistencia legendaria:</span> Pocas tecnologías han sido tan duraderas. Muchas Game Boys siguen funcionando 35 años después</li>
+                <li><span class="highlight">Compañera de viaje:</span> Transformó viajes largos, salas de espera, recreos... cualquier momento muerto se volvía aventura</li>
+                <li><span class="highlight">Fenómeno Pokémon:</span> Sin Game Boy no existiría el imperio Pokémon tal como lo conocemos</li>
+                <li><span class="highlight">Momento cultural:</span> Jugar bajo las sábanas con linterna es memoria colectiva de una generación</li>
+                <li><span class="highlight">Influencia directa:</span> Nintendo DS, 3DS, Switch... todas heredan su filosofía de diversión portátil</li>
+            </ul>
+            <p style="margin-top: 2rem; font-size: 1.1rem; font-style: italic;">
+                "La Game Boy no fue la portátil más potente, ni la más avanzada técnicamente. Pero fue la más divertida, la más resistente y la más querida. Esa pantalla verdosa sin luz propia iluminó millones de infancias. Y eso, ninguna especificación técnica puede superarlo."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
+        <p style="margin-top: 0.5rem;">Pantalla verde, recuerdos dorados</p>
+    </footer>
+</body>
+</html>
