@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master System - SEGA | Consolas Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #e74c3c;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #e74c3c;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 2rem;
+            border: 2px solid #e74c3c;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #e74c3c;
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .hero-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 3px solid #e74c3c;
+            text-align: center;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #e74c3c;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #c0392b;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .game-card {
+            background: rgba(231, 76, 60, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(231, 76, 60, 0.3);
+            transition: all 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #e74c3c;
+            background: rgba(231, 76, 60, 0.4);
+        }
+
+        .regional-box {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.3), rgba(192, 57, 43, 0.3));
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+
+        .legacy-box {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.5), rgba(52, 73, 94, 0.5));
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px solid #e74c3c;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 5px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 MASTER SYSTEM 🎮</h1>
+        <p class="subtitle">El valiente desafío de SEGA a Nintendo</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Consolas Retro</a>
+
+        <div class="hero-section">
+            <div style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); padding: 3rem; border-radius: 10px; margin: 1rem 0;">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">🎮</p>
+                    <p style="font-size: 1.5rem; font-weight: bold;">SEGA MASTER SYSTEM</p>
+                    <p style="margin-top: 0.5rem; opacity: 0.8;">Negro y rojo, el retador valiente</p>
+                </div>
+            </div>
+            <p class="intro-text">
+                La Master System fue la valiente apuesta de SEGA por conquistar el mercado que Nintendo dominaba con mano de hierro. Técnicamente superior a la NES, nunca consiguió su corona en todos los territorios, pero sembró las semillas del imperio SEGA y conquistó el corazón de millones de jugadores, especialmente en Europa y Sudamérica.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📅 Contexto Histórico</h2>
+            <ul>
+                <li><span class="highlight">Lanzamiento Japón (Mark III):</span> 1985</li>
+                <li><span class="highlight">Reformulación como Master System:</span> 1986 para mercados occidentales</li>
+                <li><span class="highlight">Situación del mercado:</span> Nintendo ya había establecido su reinado con la NES/Famicom</li>
+                <li><span class="highlight">El desafío:</span> Competir contra el monopolio de Nintendo con mejor tecnología</li>
+                <li><span class="highlight">Éxito regional:</span> En Europa y especialmente Brasil se convirtió en fenómeno cultural</li>
+                <li><span class="highlight">Estados Unidos:</span> Lucha difícil contra las tácticas comerciales agresivas de Nintendo</li>
+                <li><span class="highlight">Brasil, caso especial:</span> Gracias a Tectoy, la Master System sigue siendo leyenda brasileña hasta hoy</li>
+            </ul>
+
+            <div class="regional-box">
+                <h3 style="color: #e74c3c; margin-bottom: 1rem;">🌍 Historias de dos mercados</h3>
+                <p>Mientras en Estados Unidos la NES dominaba, en Europa la Master System luchaba de igual a igual. En países como Reino Unido, España, Portugal y especialmente Brasil, SEGA logró conquistar hogares. La Master System brasileña es fenómeno cultural que perdura décadas después, con reediciones y juegos nuevos hasta los 2000.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Características Clave</h2>
+            <ul>
+                <li><span class="highlight">Tipo:</span> Consola de sobremesa de 8 bits</li>
+                <li><span class="highlight">Diseño:</span> Carcasa negra y roja que respiraba modernidad</li>
+                <li><span class="highlight">Doble formato:</span> Cartuchos (más comunes) y Sega Cards (tarjetas más económicas y compactas)</li>
+                <li><span class="highlight">Ventaja técnica:</span> Superior a NES en potencia gráfica y paleta de colores</li>
+                <li><span class="highlight">Gráficos:</span> Mayor capacidad de colores simultáneos en pantalla</li>
+                <li><span class="highlight">Sonido:</span> Chip de audio PSG de 3 canales más generador de ruido</li>
+                <li><span class="highlight">Mando:</span> Diseño ergonómico con dos botones, más cómodo que el rectángulo de NES</li>
+                <li><span class="highlight">Light Phaser:</span> Pistola de luz para juegos de tiro (equivalente al Zapper)</li>
+                <li><span class="highlight">Alex Kidd integrado:</span> Muchos modelos traían el juego en memoria interna</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Juegos Emblemáticos</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>🐒 Alex Kidd in Miracle World</h3>
+                    <p>La mascota de SEGA antes de Sonic. Piedra-papel-tijera contra jefes</p>
+                </div>
+                <div class="game-card">
+                    <h3>✨ Phantasy Star</h3>
+                    <p>RPG revolucionario que competía con Final Fantasy</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦎 Wonder Boy III</h3>
+                    <p>Aventura-plataformas con transformaciones y exploración</p>
+                </div>
+                <div class="game-card">
+                    <h3>🦔 Sonic the Hedgehog</h3>
+                    <p>Versión 8 bits del erizo azul (en modelos tardíos)</p>
+                </div>
+                <div class="game-card">
+                    <h3>🥷 Shinobi</h3>
+                    <p>Acción ninja directa desde los arcades</p>
+                </div>
+                <div class="game-card">
+                    <h3>⚔️ Golden Axe</h3>
+                    <p>Beat'em up fantástico con bárbaros y dragones</p>
+                </div>
+                <div class="game-card">
+                    <h3>🏎️ OutRun</h3>
+                    <p>Conducción arcade con Ferrari Testarossa rojo</p>
+                </div>
+                <div class="game-card">
+                    <h3>👻 Ghost House</h3>
+                    <p>Terror pixelado en mansión encantada</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem;">
+                Los ports de arcade de SEGA eran <span class="highlight">técnicamente brillantes y muy fieles.</span> La compañía aprovechó su experiencia en recreativas para ofrecer conversiones de calidad superior.
+            </p>
+        </div>
+
+        <div class="legacy-box">
+            <h2>🏆 Legado del Retador</h2>
+            <ul>
+                <li><span class="highlight">No ganó la guerra, pero plantó semillas:</span> Estableció a SEGA como alternativa seria y preparó el camino para Mega Drive</li>
+                <li><span class="highlight">Superioridad técnica ignorada:</span> Demostró que mejores especificaciones no siempre ganan (lección que se repetiría)</li>
+                <li><span class="highlight">Éxito europeo:</span> En mercados fuera de Japón/USA logró establecerse firmemente</li>
+                <li><span class="highlight">Fenómeno brasileño:</span> Brasil adoptó la Master System como propia. Tectoy produjo modelos hasta 2018</li>
+                <li><span class="highlight">Biblioteca de calidad:</span> Catálogo colorido, dinámico y técnicamente pulido</li>
+                <li><span class="highlight">Lecciones aprendidas:</span> SEGA aplicaría todo lo aprendido en su siguiente batalla con Mega Drive</li>
+                <li><span class="highlight">Nostalgia regional:</span> Para muchos europeos y latinoamericanos, esta fue SU primera consola</li>
+                <li><span class="highlight">Longevidad sorprendente:</span> Siguió produciéndose y vendiendo décadas después de su lanzamiento</li>
+            </ul>
+            <p style="margin-top: 2rem; font-size: 1.1rem; font-style: italic;">
+                "La Master System perdió la batalla global pero ganó guerras regionales. Su legado no está en las cifras de ventas mundiales, sino en los millones de jugadores que la adoptaron como suya, especialmente fuera del mercado estadounidense. Demostró que había espacio para más de un gigante, preparando el terreno para la épica guerra de los 16 bits."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
+        <p style="margin-top: 0.5rem;">El retador que nunca se rindió</p>
+    </footer>
+</body>
+</html>
