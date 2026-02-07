@@ -1,0 +1,44 @@
+name: Wallapop Retro Console Scraper
+
+on:
+  schedule:
+    # 22:59 UTC = 23:59 CET (horario de invierno)
+    - cron: '59 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Run scraper
+        run: python scraper/scraper.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add consolas-retro/data/
+          git diff --staged --quiet || git commit -m "Update Wallapop data $(date -u +%Y-%m-%d)"
+          git push

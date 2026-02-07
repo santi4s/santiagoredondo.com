@@ -169,6 +169,32 @@
             margin-top: 3rem;
             border-top: 5px solid #f39c12;
         }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+        #wallapop-section {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -281,7 +307,26 @@
                 "La Game Boy Color no reinventó la rueda, pero la pintó con colores vibrantes. Fue la evolución lógica, respetuosa con el legado pero mirando al futuro. Para quienes crecimos con la pantalla verde, ver ese mismo mundo en color fue como volver a casa pero encontrándola renovada."
             </p>
         </div>
+        <div class="section" id="wallapop-section">
+            <h2>📊 Mercado Wallapop</h2>
+            <div id="wallapop-stats"></div>
+            <div style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Evolución de precios</h3>
+                <canvas id="price-chart" height="300"></canvas>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Anuncios</h3>
+                <canvas id="listings-chart" height="250"></canvas>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">
+                Datos actualizados diariamente desde Wallapop
+            </p>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <script src="/consolas-retro/js/charts.js"></script>
+    <script>initWallapopSection('gameboy-color');</script>
 
     <footer>
         <p>&copy; 2026 santiagoredondo.com/consolasretro</p>
