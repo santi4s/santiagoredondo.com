@@ -1,6 +1,6 @@
 {
-  "date": "2026-02-12",
-  "scraped_at": "2026-02-12T23:16:44.039687+00:00",
+  "date": "2026-02-13",
+  "scraped_at": "2026-02-13T23:18:51.895852+00:00",
   "consoles": {
     "nes": {
       "total_listings": 0,
@@ -15,14 +15,14 @@
       "median_sold_price": null
     },
     "snes": {
-      "total_listings": 2,
-      "available_count": 2,
+      "total_listings": 0,
+      "available_count": 0,
       "sold_count": 0,
       "reserved_count": 0,
-      "avg_offer_price": 60.0,
-      "median_offer_price": 60.0,
-      "min_offer_price": 60.0,
-      "max_offer_price": 60.0,
+      "avg_offer_price": null,
+      "median_offer_price": null,
+      "min_offer_price": null,
+      "max_offer_price": null,
       "avg_sold_price": null,
       "median_sold_price": null
     },
