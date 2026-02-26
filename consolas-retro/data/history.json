@@ -1936,5 +1936,107 @@
         "median_sold_price": null
       }
     }
+  },
+  {
+    "date": "2026-02-26",
+    "scraped_at": "2026-02-26T23:18:05.825113+00:00",
+    "consoles": {
+      "nes": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "snes": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "gameboy": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "gameboy-color": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "mastersystem": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "mastersystem-2": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "megadrive": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      },
+      "megadrive-2": {
+        "total_listings": 0,
+        "available_count": 0,
+        "sold_count": 0,
+        "reserved_count": 0,
+        "avg_offer_price": null,
+        "median_offer_price": null,
+        "min_offer_price": null,
+        "max_offer_price": null,
+        "avg_sold_price": null,
+        "median_sold_price": null
+      }
+    }
   }
 ]
