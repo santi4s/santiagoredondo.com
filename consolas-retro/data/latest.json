@@ -1,6 +1,6 @@
 {
-  "date": "2026-03-08",
-  "scraped_at": "2026-03-08T23:12:02.879167+00:00",
+  "date": "2026-03-09",
+  "scraped_at": "2026-03-09T23:15:22.906091+00:00",
   "consoles": {
     "nes": {
       "total_listings": 0,
@@ -19,18 +19,18 @@
       "available_count": 3,
       "sold_count": 0,
       "reserved_count": 0,
-      "avg_offer_price": 54.67,
+      "avg_offer_price": 60.0,
       "median_offer_price": 60.0,
-      "min_offer_price": 44.0,
+      "min_offer_price": 60.0,
       "max_offer_price": 60.0,
       "avg_sold_price": null,
       "median_sold_price": null
     },
     "gameboy": {
-      "total_listings": 1,
+      "total_listings": 2,
       "available_count": 1,
       "sold_count": 0,
-      "reserved_count": 0,
+      "reserved_count": 1,
       "avg_offer_price": 44.0,
       "median_offer_price": 44.0,
       "min_offer_price": 44.0,
