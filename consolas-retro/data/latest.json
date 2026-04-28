@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-27",
-  "scraped_at": "2026-04-27T23:39:38.647777+00:00",
+  "date": "2026-04-28",
+  "scraped_at": "2026-04-28T23:41:26.938656+00:00",
   "consoles": {
     "nes": {
       "total_listings": 1,
@@ -19,18 +19,18 @@
       "available_count": 1,
       "sold_count": 0,
       "reserved_count": 0,
-      "avg_offer_price": 449.99,
-      "median_offer_price": 449.99,
-      "min_offer_price": 449.99,
-      "max_offer_price": 449.99,
+      "avg_offer_price": 44.0,
+      "median_offer_price": 44.0,
+      "min_offer_price": 44.0,
+      "max_offer_price": 44.0,
       "avg_sold_price": null,
       "median_sold_price": null
     },
     "gameboy": {
-      "total_listings": 2,
+      "total_listings": 1,
       "available_count": 1,
       "sold_count": 0,
-      "reserved_count": 1,
+      "reserved_count": 0,
       "avg_offer_price": 44.0,
       "median_offer_price": 44.0,
       "min_offer_price": 44.0,
@@ -75,14 +75,14 @@
       "median_sold_price": null
     },
     "megadrive": {
-      "total_listings": 0,
-      "available_count": 0,
+      "total_listings": 1,
+      "available_count": 1,
       "sold_count": 0,
       "reserved_count": 0,
-      "avg_offer_price": null,
-      "median_offer_price": null,
-      "min_offer_price": null,
-      "max_offer_price": null,
+      "avg_offer_price": 44.0,
+      "median_offer_price": 44.0,
+      "min_offer_price": 44.0,
+      "max_offer_price": 44.0,
       "avg_sold_price": null,
       "median_sold_price": null
     },
